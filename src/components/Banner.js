@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Nav, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/headerImg.webp"
+import headerImg from "../assets/img/headerImg1.jpeg";
 
 function Banner() {
 const [loopNum, setLoopNum ] = useState(0);
@@ -47,13 +47,14 @@ useEffect(()=>{
   return <section className="banner" id="home">
       <Container>
           <Row className="align-items-center">
-            <Col xs={12} md={6} xl={7}>
+            <Col xs={12} md={6} xl={8}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi I'm webdecoded`} <span className="wrap">{text}</span></h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore m</p>
-                <button onClick={()=>console.log("connect")}>Let's Connect<ArrowRightCircle size={25}/></button>
+                <h1>{`Hi I'm Ali Agpak`} <br></br> <span className="wrap">{text}</span></h1>
+                <p>I am Full-Stack Developer. I have some experience with HTML,CSS, Bootstrap, Tailwind, Javascript and React.JS. And also I worked in Clarusway as Mentor in Front-End Development</p>
+                <Nav.Link href="#connect" ><button onClick={()=>console.log("connect")}>Contact Me<ArrowRightCircle size={25}/></button>
+                </Nav.Link>
             </Col>
-            <Col xs={12} md={6} xl={5}>
+            <Col xs={12} md={6} xl={4}>
                 <img src={headerImg} alt="Header Img" />
             </Col>
           </Row>

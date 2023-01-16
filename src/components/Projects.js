@@ -3,30 +3,28 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCard";
-import colorSharp from "../assets/img/color-sharp.png";
-
+// import colorSharp from "../assets/img/color-sharp.png";
+import projImg1 from "../assets/img/first-project.png"
+import projImg2 from "../assets/img/portfolio.png";
+import colorSharp4 from "../assets/img/colorSharp4.gif"
 function Projects() {
   const projects = [
     {
       title: "ToDo List",
       description: "Web Development",
-      imgUrl: "projImg1",
+      imgUrl: projImg1,
     },
     {
-      title: "ToDo List",
+      title: "Portfolio",
       description: "Web Development",
-      imgUrl: "projImg2",
+      imgUrl: projImg2,
     },
     {
-      title: "ToDo List",
+      title: "Calculator",
       description: "Web Development",
       imgUrl: "projImg3",
     },
-    {
-      title: "ToDo List",
-      description: "Web Development",
-      imgUrl: "projImg4",
-    },
+
   ];
   return (
     <section className="project" id="project">
@@ -38,10 +36,10 @@ function Projects() {
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum.{" "}
+              dolores et ea rebum.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="/home">
+              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center " id="pills-tab">
                 <Nav.Item>
                   <Nav.Link eventKey="first"> Tab One</Nav.Link>
                 </Nav.Item>
@@ -73,7 +71,7 @@ function Projects() {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp} alt="img"/>
+      <img className="background-image-right" src={colorSharp4} alt="img"/>
     </section>
   );
 }
