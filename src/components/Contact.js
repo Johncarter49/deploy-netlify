@@ -24,7 +24,7 @@ function Contact() {
     e.preventDefault();
     setButtonText("Sending ...");
     let response = await fetch("http://localhost:5000/contact",{
-        methot:"POST",
+        method:"POST",
         headers:{
             "Content-Type": "Application/json;charset=utf-8"
         },
@@ -69,7 +69,7 @@ function Contact() {
                         <Col>
                         <textarea  row="16" cols="50"  value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate("message", e.target.value)}></textarea>
                         <br/>
-                        <button type='submit'><span>{buttonText}</span></button></Col>
+                        <button type='submit' className="btn-end"><span>{buttonText}</span></button></Col>
 
                         {
                             status.message && 

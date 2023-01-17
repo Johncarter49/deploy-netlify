@@ -234,6 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 200px;
 }
 
 .banner .tagline{
@@ -287,6 +288,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 .banner img{
     animation: updown 3s linear infinite;
     width: 75%;
+    border-radius: 55px;
 }
 
 @keyframes updown{
@@ -304,10 +306,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     text-align: center;
 }
 
+
 /* Skills */
 
 .skill{
-    padding: 0 0 50px 0;
+    padding: 50px 0 50px 0;
     position: relative;
 }
 
@@ -444,8 +447,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     position: relative;
     border-radius: 30px;
     overflow: hidden;
+    /* width: 50px; */
     margin-bottom: 24px;
 }
+
+.proj-imgbx img{
+    width: 100%;
+    height: 100%;
+}
+
 
 .proj-imgbx::before{
     content: "";
@@ -521,6 +531,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     padding: 15px;
     font-size: 1.2rem;
     margin-right: 1px;
+
+}
+
+.btn-end{
+    padding: 10px 200px;
+    background-color: #3642aa;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #B8B8B8;
 
 }
 

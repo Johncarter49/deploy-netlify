@@ -13,11 +13,13 @@ function Projects() {
       title: "ToDo List",
       description: "Web Development",
       imgUrl: projImg1,
+      hRef: "https://johncarter49.github.io/language_cards/" 
     },
     {
       title: "Portfolio",
       description: "Web Development",
       imgUrl: projImg2,
+      hRef: "https://master--agpak-second.netlify.app/" 
     },
     {
       title: "Calculator",

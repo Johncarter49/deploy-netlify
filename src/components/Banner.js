@@ -40,7 +40,7 @@ useEffect(()=>{
     }, delta)
 
     return ()=>{clearInterval(ticker)}
-},[text]);
+},[tick]);
 
 
 
