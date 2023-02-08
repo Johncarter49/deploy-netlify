@@ -6,11 +6,12 @@ import ProjectCard from "./ProjectCard";
 // import colorSharp from "../assets/img/color-sharp.png";
 import projImg1 from "../assets/img/first-project.png"
 import projImg2 from "../assets/img/portfolio.png";
+import projImg3 from "../assets/img/e-commerse-bild.png";
 import colorSharp4 from "../assets/img/colorSharp4.gif"
 function Projects() {
   const projects = [
     {
-      title: "ToDo List",
+      title: "Language Cards",
       description: "Web Development",
       imgUrl: projImg1,
       hRef: "https://johncarter49.github.io/language_cards/" 
@@ -22,9 +23,10 @@ function Projects() {
       hRef: "https://master--agpak-second.netlify.app/" 
     },
     {
-      title: "Calculator",
+      title: "E-Commerse",
       description: "Web Development",
-      imgUrl: "projImg3",
+      imgUrl: projImg3,
+      hRef: "https://johncarter49.github.io/e-commerse/"
     },
 
   ];
